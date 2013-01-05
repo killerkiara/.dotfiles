@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Check for OS X
+if [ $(uname -s) = "Darwin" ]; then
+	. script/homebrew
+fi
