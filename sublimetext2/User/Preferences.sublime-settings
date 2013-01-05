@@ -1,0 +1,14 @@
+{
+	"color_scheme": "Packages/Color Scheme - Default/Mac Classic.tmTheme",
+	"theme": "Default.sublime-theme",
+	"font_face": "Monaco",
+	"font_size": 12.0,
+	"ignored_packages":
+	[
+		"Vintage",
+		"SublimeLinter"
+	],
+	"trim_trailing_white_space_on_save": true,
+	"ensure_newline_at_eof_on_save": true,
+	"word_wrap": false
+}
