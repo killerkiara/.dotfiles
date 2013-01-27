@@ -1,6 +1,7 @@
-#!/bin/bash
+#!/bin/bash -e
 
 # Check for OS X
 if [ $(uname -s) = "Darwin" ]; then
-	. script/homebrew
+  script/homebrew
+  script/sublime
 fi
