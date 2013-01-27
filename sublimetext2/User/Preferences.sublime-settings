@@ -1,14 +1,22 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Mac Classic.tmTheme",
-	"theme": "Default.sublime-theme",
-	"font_face": "Monaco",
-	"font_size": 12.0,
-	"ignored_packages":
-	[
-		"Vintage",
-		"SublimeLinter"
-	],
-	"trim_trailing_white_space_on_save": true,
-	"ensure_newline_at_eof_on_save": true,
-	"word_wrap": false
+    "color_scheme": "Packages/Color Scheme - Default/Mac Classic.tmTheme",
+    "theme": "Default.sublime-theme",
+    "font_face": "Monaco",
+    "font_size": 12.0,
+    "ignored_packages":
+    [
+        "Vintage",
+        "SublimeLinter"
+    ],
+    "trim_trailing_white_space_on_save": true,
+    "ensure_newline_at_eof_on_save": true,
+    "word_wrap": false,
+    "draw_white_space": "all",
+    "tab_size": 2,
+    "translate_tabs_to_spaces": true,
+    "caret_style": "wide",
+    "highlight_line": true,
+    "line_padding_bottom": 1,
+    "line_padding_top": 1,
+    "bold_folder_labels": true
 }
