@@ -3,5 +3,4 @@
 # Check for OS X
 if [ $(uname -s) = "Darwin" ]; then
   script/homebrew
-  script/sublime
 fi

@@ -1,0 +1,18 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+      force: true
+
+- clean: ['~']
+
+- link:
+    ~/.bash_profile:
+      path: bash/bash_profile
+    ~/.bash_prompt:
+      path: bash/bash_prompt
+    ~/.aliases:
+      path: bash/aliases
+    ~/.gitignore_global:
+      path: gitignore_global
+      force: true
