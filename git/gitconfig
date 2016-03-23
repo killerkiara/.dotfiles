@@ -1,0 +1,19 @@
+[user]
+	name = David Piegza
+
+[alias]
+	ci = commit
+	st = status
+	co = checkout
+
+[core]
+	excludesfile = ~/.gitignore_global
+
+[mergetool]
+	keepBackup = true
+
+[color]
+	ui = true
+
+[push]
+	default = simple
