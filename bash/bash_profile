@@ -34,9 +34,9 @@ export LANG="en_US"
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
 
-
-
-
+# Set email address for git
+export EMAIL=`cat ~/.email 2> /dev/null`
+[ -z "$EMAIL" ] && echo "\$EMAIL has not been set. Add a ~/.email file with your email address or set it in \$EMAIL (used for git config)."
 
 ## OS X
 
