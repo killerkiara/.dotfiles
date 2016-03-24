@@ -127,17 +127,16 @@ alias pumpitup="osascript -e 'set volume 7'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
 # dev aliases
-alias s='subl'
 alias be='bundle exec'
 alias rspecd='be rspec --format d'
 alias dbreset='be rake db:drop && be rake db:create && be rake db:migrate'
 alias dbrestore='be rake db:drop && be rake db:create && pg_restore -j 5 --verbose --clean --no-acl --no-owner -d workhub_live'
-alias es='elasticsearch -f -D es.config=/usr/local/Cellar/elasticsearch/0.90.2/config/elasticsearch.yml'
+
+alias dbundle='ruby -I /Users/david/Projects/davidpiegza/bundler/lib /Users/david/Projects/davidpiegza/bundler/exe/bundle'
+
+alias glist='for ref in $(git for-each-ref --sort=-committerdate --format="%(refname)" refs/heads/ refs/remotes ); do git log -n1 $ref --pretty=format:"%Cgreen%cr%Creset %C(yellow)%d%Creset %C(bold blue)<%an>%Creset%n" | cat ; done | awk '"'! a["'$0'"]++'"
 
 # postgres
 alias show_pid='cat /usr/local/var/postgres/postmaster.pid'
 alias remove_pid='rm /usr/local/var/postgres/postmaster.pid'
 alias start_psql='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
-
-# custom
-alias dbundle='ruby -I /Users/david/Projects/davidpiegza/bundler/lib /Users/david/Projects/davidpiegza/bundler/exe/bundle'
