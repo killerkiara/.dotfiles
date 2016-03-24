@@ -1,0 +1,3 @@
+# TAR Backup / Restore
+alias backup_home="tar -cvpzf ~/home_backup.tar.gz --exclude=~/home_backup.tar.gz --exclude=~/.dbus --exclude=~/.cache ~"
+alias restore_home="tar -xvpzf ./home_backup.tar.gz -C / --numeric-owner"
