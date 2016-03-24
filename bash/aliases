@@ -86,7 +86,7 @@ alias dbundle='ruby -I /Users/david/Projects/davidpiegza/bundler/lib /Users/davi
 
 alias glist='for ref in $(git for-each-ref --sort=-committerdate --format="%(refname)" refs/heads/ refs/remotes ); do git log -n1 $ref --pretty=format:"%Cgreen%cr%Creset %C(yellow)%d%Creset %C(bold blue)<%an>%Creset%n" | cat ; done | awk '"'! a["'$0'"]++'"
 
-local unamestr=`uname`
+unamestr=`uname`
 
 # Load OS X specific aliases
 if [[ "$unamestr" == "Darwin" ]]; then
