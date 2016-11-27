@@ -158,7 +158,7 @@ set_prompts() {
     PS1+="\[$userStyle\]\u" # username
     PS1+="\[$at\]@"
     PS1+="\[$hostStyle\]\h" # host
-    PS1+="\[$at\]: "
+    PS1+="\[$at\]:⚡️  "
     PS1+="\[$workingDir\]\w" # working directory
     PS1+="\$(prompt_git \"$at on $gitb\")" # git repository details
     PS1+="\n"
