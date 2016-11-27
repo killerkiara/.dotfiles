@@ -80,7 +80,6 @@ done
 alias be='bundle exec'
 alias rspecd='be rspec --format d'
 alias dbreset='be rake db:drop && be rake db:create && be rake db:migrate'
-alias dbrestore='be rake db:drop && be rake db:create && pg_restore -j 5 --verbose --clean --no-acl --no-owner -d workhub_live'
 
 alias dbundle='ruby -I /Users/david/Projects/davidpiegza/bundler/lib /Users/david/Projects/davidpiegza/bundler/exe/bundle'
 
