@@ -114,7 +114,7 @@ set_prompts() {
         local white="$white"
         local reset="$reset"
 
-    if [ "$USER" == "KiKi" ]; then
+    if [ "$USER" == "KiKi" ] || [ "$USER" == "chiara" ]; then
         us="\[\033[01;38;5;56m\]"
         at="\[\033[01;38;5;141m\]"
         hs="\[\033[01;38;5;56m\]"
