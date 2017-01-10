@@ -58,8 +58,8 @@ prompt_git() {
 }
 
 set_prompts() {
-  white="\e[1;37m"
-  reset="\e[0m"
+  white="\033[1;37m"
+  reset="\033[0m"
 
   local white="$white"
   local reset="$reset"
@@ -96,7 +96,8 @@ set_prompts() {
   PS1+="\[$workingDir\]\w" # working directory
   PS1+="\$(prompt_git \"$at on $gitb\")" # git repository details
   PS1+="\n"
-  PS1+="\[$reset$whitebold\]\$ $reset$white" # $ (and reset color)
+  PS1+="\[$reset$whitebold\]\$ \[$reset$white\]" # $ (and reset color)
+
 
   export PS1
 }
