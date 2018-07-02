@@ -50,6 +50,9 @@ complete -W "NSGlobalDomain" defaults
 # rbenv
 eval "$(rbenv init -)"
 
+#thefuck
+eval $(thefuck --alias)
+
 # git autocompletion for bash
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
