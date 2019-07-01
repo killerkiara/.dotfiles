@@ -50,6 +50,9 @@ complete -W "NSGlobalDomain" defaults
 # rbenv
 eval "$(rbenv init -)"
 
+#scmpuff
+eval "$(scmpuff init -s)"
+
 #thefuck
 eval $(thefuck --alias)
 
